@@ -1,0 +1,8 @@
+/* Styles for the navigation component */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #4f4e4e;
+}
