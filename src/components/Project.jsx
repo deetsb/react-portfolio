@@ -1,3 +1,5 @@
+import './project.css'
+
 
 function Project({ project }) {
     return (

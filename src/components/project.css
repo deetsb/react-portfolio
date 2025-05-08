@@ -1,0 +1,25 @@
+/* Project component styles */
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.project-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.project-description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
