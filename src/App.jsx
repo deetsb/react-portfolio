@@ -1,19 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from './components/Header.jsx'
-import Footer from './components/Footer.jsx'
+// filepath: /Users/adityabhonsle/Desktop/challenges/react-portfolio/src/App.jsx
+import { Route, Routes, Navigate } from 'react-router-dom';
+import './App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import { AboutMePage, PortfolioPage, ResumePage, ContactPage } from './pages';
 
 function App() {
-
   return (
-    <>
-    <Header />
-      <h1>Hello from App Component</h1>
-    <Footer />
-    </>
-  )
+    <div className="App">
+      <Header />
+      <main className="main">
+        <Routes>
+          <Route path="/" element={<Navigate to="/about" replace />} />
+          <Route path="/about" element={<AboutMePage />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/resume" element={<ResumePage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
